@@ -16,7 +16,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableWebSecurity
 public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
 
-
 	@Autowired
 	private UserDetailsService userDetailsService;
 	
@@ -41,6 +40,6 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
 				.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
 			.and()
 			.csrf().disable();
-}
+	}
 	
 }
